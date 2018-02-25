@@ -148,14 +148,17 @@ a:hover{
 
 .m-desk{    margin-top: 20px;}
 
-.logo{ float: left; margin-left: 60px;}
-
 .logo img{ height: 60px;}
 
+.m-desk{
+    display: flex; 
+    justify-content: space-between;
+    margin: 20px 60px 0px 60px;
+}
+
 .m-d-lpage{ 
-    float: right; 
     margin-right: 5%;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 .m-d-lpage > a{ 
     display: inline-block; 
@@ -174,6 +177,14 @@ a:hover{
     background: linear-gradient(to right, #29abe2 , #1b89cc); 
 }
 
+.m-d-rsocial a{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    background: red;
+
+}
+
 .menu-mobile{ display: none;}
 
 /* DESK - MENU */
@@ -187,6 +198,7 @@ a:hover{
 .anim-sec{ background: #051b26;}
 
 .anim-sec > img{
+    height: 900px;
     width: 100%;
     top: 0;
     left: 50%;
@@ -271,13 +283,23 @@ a:hover{
 
 
 .p-call a{ 
-    font-size: 16px; 
+    font-size: 14px; 
     float: left; 
     color: #1b89cc;
     font-weight: 500;
-    margin-top: 12px;
+    margin-top: 14px;
 }
 
+
+.p-call a::before{
+    content: '';
+    display: block;
+    float: left;
+    height: 10px;
+    width: 16px;
+    background: url(../img/icones/bfr-p.svg) no-repeat;
+    margin: 4px 8px 4px 0px
+}
 
 .p-call span{ 
     margin-top: 16px; 
@@ -329,7 +351,7 @@ footer{
 }
 
 .div-f img{ 
-    max-height: 60px; 
+    max-height: 90px; 
     margin: 0 auto 24px auto; 
 }
 
